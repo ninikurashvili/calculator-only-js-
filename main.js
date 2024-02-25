@@ -52,9 +52,9 @@ while (true) {
 function getValidNumber(message) {
   let number;
   //ციკლი,რომელიც გაეშვება მანამ,სანამ მომხმარებლის მიერ შემოყვანილი ცვლადი არ იქნება რიცხვი;
-  while (isNaN(Number(number)) || number === "") {
+  while (isNaN(Number(number)) || number === "" || number === null) {
     number = prompt(message);
-    if (isNaN(Number(number)) || number === "") {
+    if (isNaN(Number(number)) || number === "" || number === null) {
       alert("Please enter a valid number");
     }
   }
